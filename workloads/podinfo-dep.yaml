@@ -57,6 +57,8 @@ spec:
         - --random-error=false
         env:
         - name: PODINFO_UI_COLOR
+          value: "hello dong"
+        - name: PODINFO_UI_COLOR
           value: "#34577c"
         livenessProbe:
           httpGet:
@@ -73,5 +75,3 @@ spec:
           requests:
             cpu: 10m
             memory: 64Mi
-        - name: PODINFO_UI_COLOR
-          value: "hello dong"
